@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using GlobalTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 using GlobalTicket.TicketManagement.Application.Features.Categories.Quries.GetCategoryList;
 using GlobalTicket.TicketManagement.Application.Features.Categories.Quries.GetCategoryListWithEvents;
 using GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvents;
@@ -27,8 +28,8 @@ namespace GlobalTicket.TicketManagement.Application.Profiles
             CreateMap<Category, CategoryDto>();
             CreateMap<Category, CategoryListVm>();
             CreateMap<Category, CategoryEventListVm>();
-           // CreateMap<Category, CreateCategoryCommand>();
-            //CreateMap<Category, CreateCategoryDto>();
+            CreateMap<Category, CreateCategoryCommand>();
+            CreateMap<Category, CreateCategoryDto>();
         }
     }
 }
